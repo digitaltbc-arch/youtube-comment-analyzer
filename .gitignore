@@ -30,8 +30,12 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
+# env files — .env.local / .env.*.local 은 절대 커밋하지 않음
+.env*.local
+.env.development
+.env.production
+.env
+# .env.example 은 허용 (API 키 없는 템플릿)
 
 # vercel
 .vercel
